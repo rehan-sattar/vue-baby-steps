@@ -16,6 +16,7 @@ export default {
   methods: {
     addTodo(e) {
       e.preventDefault();
+      if (this.title.length === 0) return;
       const newTodo = {
         title: this.title,
         completed: false
